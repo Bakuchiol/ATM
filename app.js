@@ -18,6 +18,7 @@ let depositAmount = Math.floor(Math.random() * 300) + 1;
 // console.log(depositAmount)
 // console.log('deposit:', depositAmount)
 
+// let newBalance = randomBalance;
 // display balance on screen
 const currentBalance = () => {
     screen.innerHTML = randomBalance //---> 1st way
@@ -27,12 +28,12 @@ const currentBalance = () => {
 
 // (withdrawals) withdraw from balance
 const withdrawFromBalance = () => {
-    let newBalance = randomBalance - withdrawAmount
-    // console.log(`Your current balance is: ${newBalance}`)
-
+    randomBalance = randomBalance - withdrawAmount    
+    // console.log(`Your current balance after withdrawal is: ${randomBalance}`)
+    //
     //check if balance in negative
-    if(newBalance >= 0) {
-        screen.innerText = newBalance
+    if(randomBalance >= 0) {
+        screen.innerText = randomBalance
     } else {
         screen.innerText = "Insufficient Funds"
     }
@@ -40,7 +41,7 @@ const withdrawFromBalance = () => {
 
 // add deposit to current balance
 const newDeposit = () => {
-    let newBalance = randomBalance + depositAmount
-    // console.log(newBalance)
-    screen.innerText = newBalance
+    randomBalance = randomBalance + depositAmount
+    // console.log('new balance after deposit:', randomBalance)
+    screen.innerText = randomBalance
 }
