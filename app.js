@@ -1,9 +1,9 @@
-const checkBalance = document.querySelector('.balance');
-const withdrawMoney = document.querySelector('.withdraw');
-const depositMoney = document.querySelector('.deposit');
-const quickMoney = document.querySelector('.quickCash');
-const transferMoney = document.querySelector('.transfer');
-const reset = document.querySelector('.home');
+// const checkBalance = document.querySelector('.balance');
+// const withdrawMoney = document.querySelector('.withdraw');
+// const depositMoney = document.querySelector('.deposit');
+// const quickMoney = document.querySelector('.quickCash');
+// const transferMoney = document.querySelector('.transfer');
+// const reset = document.querySelector('.home');
 
 // display screen
 const screen = document.querySelector('.screen')
