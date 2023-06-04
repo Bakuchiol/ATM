@@ -51,14 +51,14 @@ const withdrawFromBalance = () => {
 const newDeposit = () => {
     balance = balance + depositAmount
     // console.log('new balance after deposit:', randomBalance)
-    screen.innerText = `Current balance is $${balance}, after depositing $${depositAmount}`
+    screen.innerText = `Current balance is: $${balance} after depositing $${depositAmount}`
 }
 
 // quick withdrawal --
 const quickCash = () => {
     balance = balance - 50
     // console.log('after quick draw', balance)
-    screen.innerText = 'Current balance is $' + balance + 'after withdrawing $50 from' + balance + '.'
+    screen.innerText = 'Current balance is: $' + balance + ' after withdrawing $50'
 }
 
 // transfer

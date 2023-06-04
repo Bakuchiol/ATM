@@ -9,10 +9,8 @@
 </head>
 <body>
         <!-- bank name -->
-        <div class="bankTop">
-            <h2>PiggyBank&reg;</h2>
-        </div>
-
+        <!-- <div class="bankTop"></div> -->
+    <div class="bankTop">
     <div class="main">
         <div class="buttonsLeft">
             <button class="balance" onclick="currentBalance()"></button>
@@ -20,9 +18,11 @@
             <button class="deposit" onclick="newDeposit()"></button>
         </div>
 
-        
         <div class="display">
-            <div class="bankName"><h3>PiggyBank&reg;</h3></div>
+            <div class="bankName">
+                <img src="pig.png" alt="">
+                <h3>PiggyBank&reg;</h3>
+            </div>
                 <!-- Screen -->
             <div class="screen">
                 <div class="rightScreen">
@@ -34,7 +34,7 @@
                 <div class="leftScreen">
                     <div class="quickScreen buttonScreen">Quick Cash ($50)</div>
                     <div class="transferScreen buttonScreen">Transfer Money</div>
-                    <div class="reset buttonScreen">Return Screen</div>
+                    <div class="reset buttonScreen">Reset Screen</div>
                 </div>
                 <!-- Balances show here -->
             </div>
@@ -46,6 +46,7 @@
         </div>
     </div>
     <div class="bottom"></div>
+    </div>
 
     <script src="app.js"></script>
 </body>
