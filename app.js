@@ -1,12 +1,6 @@
-// const checkBalance = document.querySelector('.balance');
-// const withdrawMoney = document.querySelector('.withdraw');
-// const depositMoney = document.querySelector('.deposit');
-// const quickMoney = document.querySelector('.quickCash');
-// const transferMoney = document.querySelector('.transfer');
-// const reset = document.querySelector('.home');
-
 // display screen
-const screen = document.querySelector('.screen')
+// const screen = document.querySelector('.screen')
+const screen = document.querySelector('.mainScreen')
 
 //random balance
 let balance = Math.floor(Math.random() * 5000) + 1;
@@ -74,6 +68,7 @@ const transfer = () => {
 
 //reset
 const resetScreen = () => {
-    screen.innerText = "Welcome to Bank"
+    screen.innerText = ""
     // screen.innerHTML = <p>This <span style="color: red">screen</span></p>
 }
+// resets screen only reset button shown?

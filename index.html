@@ -8,24 +8,44 @@
     <title>ATM</title>
 </head>
 <body>
+        <!-- bank name -->
+        <div class="bankTop">
+            <h2>PiggyBank&reg;</h2>
+        </div>
+
     <div class="main">
         <div class="buttonsLeft">
-            <button class="balance" onclick="currentBalance()">Check Balance</button>
-            <button class="withdraw" onclick="withdrawFromBalance()">Withdraw</button>
-            <button class="deposit" onclick="newDeposit()">Deposit</button>
+            <button class="balance" onclick="currentBalance()"></button>
+            <button class="withdraw" onclick="withdrawFromBalance()"></button>
+            <button class="deposit" onclick="newDeposit()"></button>
         </div>
+
+        
         <div class="display">
-            <h1>Welcome to Bank</h1>
+            <div class="bankName"><h3>PiggyBank&reg;</h3></div>
+                <!-- Screen -->
             <div class="screen">
-                Balances show here
+                <div class="rightScreen">
+                    <div class="balanceScreen buttonScreen">Check Balance</div>
+                    <div class="withdrawScreen buttonScreen">Withdraw Money</div>
+                    <div class="depositScreen buttonScreen">Deposit Money</div>
+                </div>
+                <div class="mainScreen"></div>
+                <div class="leftScreen">
+                    <div class="quickScreen buttonScreen">Quick Cash ($50)</div>
+                    <div class="transferScreen buttonScreen">Transfer Money</div>
+                    <div class="reset buttonScreen">Return Screen</div>
+                </div>
+                <!-- Balances show here -->
             </div>
         </div>
         <div class="buttonsRight">
-            <button class="quickCash" onclick="quickCash()">Quick Withdrawal ($50)</button>
-            <button class="transfer" onclick="transfer()">Transfer</button>
-            <button class="home" onclick="resetScreen">RESET</button>
+            <button class="quickCash" onclick="quickCash()"></button>
+            <button class="transfer" onclick="transfer()"></button>
+            <button class="home" onclick="resetScreen()"></button>
         </div>
     </div>
+    <div class="bottom"></div>
 
     <script src="app.js"></script>
 </body>
